@@ -10,7 +10,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // on - sem algoritimos quadraticos, sem loping dentro de loping , um algoritimo linear que chegue em um resultado.
+        
     }
     
 }
