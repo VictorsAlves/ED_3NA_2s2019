@@ -8,7 +8,9 @@ package Aula_03;
 public class EX_03_TROCA_POSICAO_MAIOR {
     public static void main(String[] args) {
                 int vetor[] = {1, 3, 2, 54, 56, 4, 32454, 4};
-                int indiceMaior = buscarMaior(vetor);
+                
+                
+               trocaMenor(vetor);
         
         
         
@@ -16,36 +18,29 @@ public class EX_03_TROCA_POSICAO_MAIOR {
     }
     
     
-    private static void trocaMenor(int[] v, int maior, int menor){
-        for (int i = 0; i <v.length; i++) {
-            if(v[i]==maior){
-            v[i] = menor;
-            }
-            if(v[i]==menor)
-            {
-            v[i] = maior;}        
+    private static void trocaMenor(int[] v){
+        int menor = 0;
+        int maior = 1;
+        int aux = 0;
+        for (int i = 0; i < v.length; i++) {
+                 if(v[i]>maior){
+                 maior = i;
+                 }
+                 
+                 if (v[i]<menor){
+                 menor = i;
+                 }
+                 
+                 if(v[maior]>v[menor]){
+                    aux = v[menor];
+                    v[menor] = v[maior];
+                    v[maior] = aux;
+        }
         }
     
     }
 
     
     
-    private static int buscarMenor(int[] vetor) {
-        int maior = 0;
-        for (int i = 0; i < vetor.length; i++) {
-            if (vetor[i]< vetor[maior]){
-            maior = i;
-            }
-        }
-    return maior;
-    }
-    private static int buscarMaior(int[] vetor) {
-        int maior = 0;
-        for (int i = 0; i < vetor.length; i++) {
-            if (vetor[i]> vetor[maior]){
-            maior = i;
-            }
-        }
-    return maior;
-    }
+   
 }
