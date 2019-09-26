@@ -5,6 +5,8 @@
  */
 package Aula_06;
 
+import main.No;
+
 /**
  *
  * @author ana.csantos119

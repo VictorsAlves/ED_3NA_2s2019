@@ -1,14 +1,14 @@
-package Aula_06;
+package main;
 
 /**
  *
  * @author ana.csantos119
  */
 public class No {
-    private int elemento;
-    private No prox;
+    public Object elemento;
+    public No prox;
 
-    public No(int elemento, No prox) {
+    public No(Object elemento, No prox) {
         this.elemento = elemento;
         this.prox = prox;
     }
@@ -17,7 +17,7 @@ public class No {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public int getElemento() {
+    public ObjectgetElemento() {
         return elemento;
     }
 
